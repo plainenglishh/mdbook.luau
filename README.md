@@ -15,7 +15,7 @@ local mdbook = require(...);
 -- for options, and what to use as a namespace in `:log()`.
 local preprocessor = mdbook.Preprocessor.new("blank");
 
--- Fetch the `(book.toml).preprocessor["blank"].content`, defaulting to "".
+-- Fetch the `(book.toml).preprocessor.blank.content`, defaulting to "".
 local content = preprocessor:option("content", "");
 
 -- Iterate through every chapter and set the contents to `content`.
@@ -48,7 +48,7 @@ local fs = require("@lune/fs");
 -- for options, and what to use as a namespace in `:log()`.
 local renderer = mdbook.Renderer.new("word_count");
 
--- Fetch the `(book.toml).output["word_count"].split`, defaulting to " ".
+-- Fetch the `(book.toml).output.word_count.split`, defaulting to " ".
 local split = renderer:option("split", " ");
 
 local word_counts = {
