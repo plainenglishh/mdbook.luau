@@ -1,0 +1,17 @@
+[book]
+authors = ["plainenglishh"]
+language = "en"
+multilingual = false
+src = "src"
+title = "mdbook.luau Documentation"
+
+[preprocessor.image]
+command = "lune run image"
+alt = "An inverted image."
+image = "https://i.imgur.com/JoVHtga.png"
+
+[output.word_count]
+command = "lune run ../../word_count"
+split = "" # Count by letter instead
+
+[output.html]
