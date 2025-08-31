@@ -12,6 +12,7 @@ includes = [
 ]
 
 [target]
+lib = "src/init.luau"
 environment = "lune"
 
 [indices]
