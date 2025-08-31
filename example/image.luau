@@ -1,5 +1,5 @@
 local mdbook = require("@mdbook/");
-
+ 
 local preprocessor = mdbook.Preprocessor.new("image");
 
 local image = preprocessor:option("image", "https://i.imgur.com/Q13Xwac.png");
