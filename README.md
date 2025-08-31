@@ -55,7 +55,7 @@ local word_counts = {
     total = 0,
 };
 
--- Iterate through every chapter and set the contents to `content`.
+-- Iterate through every chapter and tally word counts.
 for _, chapter in renderer:chapters() do
     local word_count = #string.split(chapter.content, split);
     renderer:log("info", `{chapter.name}: {word_count}`);
